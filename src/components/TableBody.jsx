@@ -1,16 +1,16 @@
 import { useState } from 'react';
 
 function TableBody({thead =[]}) {
-  const [cellEdit,setCellEdit]=useState(false);
-  const [cellValue,setCellValue]=useState("");
+  //const [cellEdit,setCellEdit]=useState(false);
+ // const [cellValue,setCellValue]=useState("");
   const tableCell=(cellid)=>{
       document.querySelector('.cell > div').classList.remove("active");    
       document.getElementById(cellid).classList.add("active");
       document.getElementById(cellid).contentEditable=true;
      // setCellEdit(true)
   }
- const inputChange=(e)=>setCellValue(e.target.value)
- const inuptBlur=(id)=> setCellEdit(false)
+ //const inputChange=(e)=>setCellValue(e.target.value)
+ //const inuptBlur=(id)=> setCellEdit(false)
  let row=thead.length;
  let col=thead.length;
  const Row=()=>{
